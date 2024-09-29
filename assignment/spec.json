@@ -1,0 +1,35 @@
+{
+  "pet": {
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "type": {
+        "type": "string"
+      },
+      "owner": {
+        "type": "$owner"
+      }
+    }
+  },
+  "owner": {
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "address": {
+        "type": "string"
+      },
+      "phone": {
+        "type": "string"
+      },
+      "email": {
+        "type": "string"
+      },
+      "pets": {
+        "type": "$pet",
+        "list": true
+      }
+    }
+  }
+}
